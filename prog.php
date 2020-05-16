@@ -52,6 +52,7 @@
         $Student=($Student+1);
         $Count=(int)$_POST['Count'];
         }
+        $current .="pushd \"X:/XAMPP/htdocs/HackerMan/files/".$Name."/\"\n for %%I in (*) do if %%~zI equ 0 del \"%%~I\"\n popd\n";
      $current .="pause";
      file_put_contents($file, $current);
      
